@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="237dp"
+        android:layout_height="231dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:textSize="20dp"
+        android:text="PENERIMAAN SISWA BARU"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="327dp"
+        android:layout_height="279dp"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/kotakregister" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="67dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lupa password?"
+        android:layout_below="@id/image"
+        android:textColor="@color/button"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="240dp"/>
+
+    <TextView
+        android:id="@+id/daftarAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="350dp"
+        android:clickable="true"
+        android:onClick="daftarakun"
+        android:text="Daftar akun"
+        android:textColor="@color/biru" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:id="@id/button"
+        android:src="@drawable/bulat"
+        tools:ignore="InvalidId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bulatabu"
+        android:layout_below="@id/button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="295dp"/>
+    <ImageView
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="295dp"
+        android:src="@drawable/bulatabu"></ImageView>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="288dp"
+        android:src="@drawable/baseline_navigate_next_24"></ImageView>
+
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="116dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_height="57dp"
+            android:textColorHint="@color/abu"
+            android:textColor="@color/black"
+            android:background="@drawable/button"
+            android:paddingLeft="15dp"
+
+            android:hint="EMAIL"
+            android:id="@+id/loginemail"
+            />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="185dp"
+        android:orientation="vertical"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/abu">
+    <EditText
+        android:layout_width="match_parent"
+        android:textColorHint="@color/abu"
+        android:textColor="@color/black"
+        android:layout_marginLeft="1dp"
+        android:layout_height="57dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:hint="PASSWORD"
+        android:id="@+id/loginpassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+</RelativeLayout>

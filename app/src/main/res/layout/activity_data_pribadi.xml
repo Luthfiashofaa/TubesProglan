@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataPribadi"
+    android:background="@color/white"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/abutua"
+        tools:ignore="MissingConstraints"
+        app:title="SMA KARTIKA 1 BATU"
+        app:titleTextColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Diri"
+        android:textSize="30dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:paddingTop="82dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="130dp">
+    </TextView>
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="35dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:textColorHint="@color/abu"
+        android:layout_marginTop="155dp"
+        android:id="@+id/namalengkap"
+        android:enabled="true"/>
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="15dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:textColorHint="@color/abu"
+        android:layout_marginTop="220dp"
+        android:enabled="true"
+        android:id="@+id/tempatLahir"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempat Lahir"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="195dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="260dp"
+        android:id="@+id/textViewBirthDate"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusfilter"
+        android:layout_marginTop="295dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/abu"
+        android:layout_marginTop="288dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"
+        android:enabled="true"
+        android:id="@+id/edtDatePicker"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:hint="  dd/mm/yyyy" />
+
+
+
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/abu"
+        android:layout_marginTop="350dp"
+        android:enabled="true"
+        android:id="@+id/agama"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agama"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="325dp">
+    </TextView>
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:enabled="true"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/abu"
+        android:layout_marginTop="413dp"
+        android:id="@+id/alamatRumah"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Rumah"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="388dp">
+    </TextView>
+
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/abu"
+        android:layout_marginTop="474dp"
+        android:enabled="true"
+        android:id="@+id/noHP"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. HP"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="450dp">
+    </TextView>
+
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/abu"
+        android:enabled="true"
+        android:layout_marginTop="535dp"
+        android:id="@+id/NISN"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Induk Siswa Nasional (NISN)"
+        android:textColor="@color/abutua"
+        android:textSize="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="512dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/telepon"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="140dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/whatsapp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="713dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="75dp"
+        />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="600dp"
+
+        android:backgroundTint="@color/abutua"
+        android:paddingLeft="38dp"
+        android:paddingTop="4dp"
+        android:text="SAVE"
+        android:textColor="@color/black"
+        android:textColorHint="@color/abu"
+        android:textColorLink="@color/black"
+        android:textSize="15dp"
+        android:id="@+id/saveButtonid"
+        />
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/abutua"
+        android:layout_width="130dp"
+        android:text="EDIT"
+        android:textColorLink="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="35dp"
+        android:textColor="@color/black"
+        android:paddingTop="4dp"
+        android:paddingLeft="38dp"
+        android:layout_marginTop="650dp"
+        android:id="@+id/editButton"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu"
+    tools:showIn="navigation_view">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/abutua"
+        app:title="SMA KARTIKA 1 BATU"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+
+        android:layout_width="354dp"
+        android:layout_marginTop="140dp"
+        android:layout_height="546dp"
+        android:paddingLeft="80dp"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="200dp"></ImageView>
+
+    <TextView
+        android:id="@+id/Hi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingTop="100dp"
+        android:text="Hi..."
+        android:textColor="@color/black"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:paddingLeft="30dp"
+        android:paddingTop="150dp"
+        android:text="Selamat datang di PPDB"
+        android:textSize="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="30dp"
+        android:textColor="@color/black"
+        android:paddingTop="120dp"
+        android:text="SMA Kartika 1 Batu"
+        android:textSize="30dp"></TextView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/whatsapp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="713dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="75dp"
+        />
+
+    <ImageView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_menu_24"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="340dp"
+        android:id="@+id/menu"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/telepon"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="140dp" />
+
+</RelativeLayout>
