@@ -14,7 +14,7 @@
         tools:targetApi="34">
 
         <activity
-            android:name=".AdminView"
+            android:name=".ui.admin.AdminView"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -26,16 +26,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".dataPribadi"
+            android:name=".ui.datapribadi.dataPribadi"
             android:exported="false" />
         <activity
-            android:name=".Homepage"
+            android:name=".ui.home.Homepage"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".ui.register.Register"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".ui.login.Login"
             android:exported="false" />
 
         <meta-data

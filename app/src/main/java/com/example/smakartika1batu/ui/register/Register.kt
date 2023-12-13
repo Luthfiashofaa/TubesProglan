@@ -1,10 +1,11 @@
-package com.example.smakartika1batu
+package com.example.smakartika1batu.ui.register
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.smakartika1batu.databinding.ActivityRegisterBinding
+import com.example.smakartika1batu.ui.login.Login
 
 class Register : AppCompatActivity() {
 

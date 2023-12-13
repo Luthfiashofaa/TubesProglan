@@ -1,8 +1,9 @@
-package com.example.smakartika1batu
+package com.example.smakartika1batu.ui.home
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.smakartika1batu.ui.datapribadi.dataPribadi
 import com.example.smakartika1batu.databinding.ActivityHomepageBinding
 
 class Homepage : AppCompatActivity() {

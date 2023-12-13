@@ -1,4 +1,4 @@
-package com.example.smakartika1batu
+package com.example.smakartika1batu.ui.admin
 
 import android.view.View
 import android.view.ViewGroup

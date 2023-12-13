@@ -1,4 +1,4 @@
-package com.example.smakartika1batu
+package com.example.smakartika1batu.ui.admin
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

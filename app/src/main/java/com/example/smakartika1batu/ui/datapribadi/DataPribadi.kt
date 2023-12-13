@@ -1,4 +1,4 @@
-package com.example.smakartika1batu
+package com.example.smakartika1batu.ui.datapribadi
 
 import android.app.DatePickerDialog
 import android.os.Bundle
@@ -9,12 +9,20 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import com.example.smakartika1batu.R
+import com.example.smakartika1batu.SQLiteHelper
+import com.example.smakartika1batu.StringHelper
+import com.example.smakartika1batu.StudentModel
+import com.example.smakartika1batu.data.Data
 import com.example.smakartika1batu.databinding.ActivityDataPribadiBinding
+import com.example.smakartika1batu.ui.DataPribadiModelFactory
 import java.util.Calendar
 
 class dataPribadi : AppCompatActivity() {
     private lateinit var binding: ActivityDataPribadiBinding
     private lateinit var sqliteHelper : SQLiteHelper
+    private lateinit var dataPribadiViewModel: DataPribadiViewModel
 
     private var savedNama: String? = null
     private var savedTempatLahir: String? = null
@@ -28,6 +36,7 @@ class dataPribadi : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        dataPribadiViewModel = obtainViewModel(this)
         super.onCreate(savedInstanceState)
         binding = ActivityDataPribadiBinding.inflate(layoutInflater)
 
@@ -91,6 +100,11 @@ class dataPribadi : AppCompatActivity() {
 
     }
 
+    private fun obtainViewModel(activity: AppCompatActivity): DataPribadiViewModel {
+        val factory = DataPribadiModelFactory.getInstance(activity.application)
+        return ViewModelProvider(activity, factory).get(DataPribadiViewModel::class.java)
+    }
+
     private fun getStudent(){
         val stdList = sqliteHelper.getAllStudent()
         Log.e("cek", "${stdList.size}")
@@ -119,6 +133,15 @@ class dataPribadi : AppCompatActivity() {
             )
             val status = sqliteHelper.insertStudent(std)
 
+            dataPribadiViewModel.insert(Data(
+                nama = nama,
+                domisili = tempatlahir,
+                tanggalLahir = tanggallahir,
+                agama = agama,
+                alamat = alamatrumah,
+                noHP = noHP,
+                nisn = NISN
+            ))
 
             Toast.makeText(this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show()
             disableText()

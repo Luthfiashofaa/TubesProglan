@@ -1,10 +1,13 @@
-package com.example.smakartika1batu
+package com.example.smakartika1batu.ui.login
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.smakartika1batu.ui.register.Register
 import com.example.smakartika1batu.databinding.ActivityLoginBinding
+import com.example.smakartika1batu.ui.admin.AdminView
+import com.example.smakartika1batu.ui.home.Homepage
 
 
 class Login : AppCompatActivity() {

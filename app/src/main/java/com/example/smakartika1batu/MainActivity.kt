@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.smakartika1batu.ui.login.Login
 
 class MainActivity : AppCompatActivity() {
     private val SPLASH_TIME_OUT:Long = 3000
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
 
         Handler().postDelayed({
-            startActivity(Intent(this,Login::class.java))
+            startActivity(Intent(this, Login::class.java))
             finish()
         },SPLASH_TIME_OUT)
     }
